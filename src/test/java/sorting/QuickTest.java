@@ -6,12 +6,12 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SelectionTest {
+class QuickTest {
 
     @Test
-    void testIntsArrayMustBeSortedAscBySelectionAlgo() {
+    void testIntsArrayMustBeSortedAscByQuickAlgo() {
         // given
-        Sort sort = new Selection();
+        Sort sort = new Quick();
 
         int[] testArrayEven = Arrays.copyOf(TestData.unsortedArrayEven, TestData.unsortedArrayEven.length);
         int[] testArrayOdd = Arrays.copyOf(TestData.unsortedArrayOdd, TestData.unsortedArrayOdd.length);
