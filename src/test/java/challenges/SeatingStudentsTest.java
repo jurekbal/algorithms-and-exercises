@@ -2,27 +2,26 @@ package challenges;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
 
-class SeatingStudentsTest {
+public class SeatingStudentsTest {
 
     @Test
-    void seatCombinationsMustReturnZeroOrMore() {
-//        given
+    public void seatCombinationsMustReturnZeroOrMore() {
+        // given
         int[] array = {};
-//        when
+        // when
         int result = SeatingStudents.seatCombinations(array);
         // then
-        assertTrue(result >= 0);
+        assertThat(result).isGreaterThanOrEqualTo(0);
     }
 
     @Test
-    void seatCombinationMustReturnCorrectResultTestCase1() {
+    public void seatCombinationMustReturnCorrectResultTestCase1() {
         int[] array = {12, 2, 6, 7, 11};
 
         int result = SeatingStudents.seatCombinations(array);
 
-        assertEquals(6, result);
+        assertThat(result).isEqualTo(6);
     }
 }

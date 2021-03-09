@@ -6,10 +6,10 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class QuickTest {
+public class QuickTest {
 
     @Test
-    void testIntsArrayMustBeSortedAscByQuickAlgo() {
+    public void testIntsArrayMustBeSortedAscByQuickAlgo() {
         // given
         Sort sort = new Quick();
 

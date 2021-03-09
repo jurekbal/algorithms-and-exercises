@@ -6,10 +6,10 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SelectionTest {
+public class SelectionTest {
 
     @Test
-    void testIntsArrayMustBeSortedAscBySelectionAlgo() {
+    public void testIntsArrayMustBeSortedAscBySelectionAlgo() {
         // given
         Sort sort = new Selection();
 
